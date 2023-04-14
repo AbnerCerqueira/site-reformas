@@ -250,11 +250,11 @@ footer {
 
 ::-webkit-scrollbar {
   width: 9px;
-  background-color: transparent;
+  background-color: #0157a4ff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #d3d3d3;
+  background-color: #F63231;
   border-radius: 15px;
 }
 
