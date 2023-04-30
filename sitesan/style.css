@@ -91,15 +91,21 @@ ul a:hover {
     display: flex;
     position: absolute;
     background-color: #F63231;
+    justify-content: center;
+    align-items: center;
     top: 90px;
     left: 0;
     width: 100vw;
+    overflow: hidden;
+    height: 0px;
+    transition: 0.5s;
   }
   #menu-aparece>ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -154,7 +160,7 @@ section {
   align-items: center;
   justify-content: space-around;
 }
-@media (max-width:750px){
+@media (max-width:850px){
   .sectiondois,.sectiontres,.sectionquatro{
     flex-direction: column;
   }
@@ -180,12 +186,12 @@ section {
 
 .alvenaria {
   text-align: center;
-  width: 550px;
   color: #ffffff;
   padding-top: 100px;
   padding-bottom: 100px;
   color: white;
-  font-size: 25px;
+  font-size: clamp(1.75em,1em + 3vw,1.5em);
+  word-wrap: break-word;
 }
 
 #botao2 {
@@ -216,10 +222,10 @@ section {
 .eletrica {
   text-align: center;
   color: #ffffff;
-  width: 550px;
   padding-top: 100px;
   padding-bottom: 100px;
-  font-size: 25px;
+  font-size: clamp(1.75em,1em + 3vw,1.5em);
+  word-wrap: break-word;
 }
 #botao3 {
   color: #ffffff;
@@ -238,7 +244,15 @@ section {
   border-radius: 20px;
   text-decoration: none;
 }
-
+@media (max-width:600px) {
+  .EletricaImg{
+    height: 350px;
+    width: 350px;
+  }
+  .alvenaria>h1{
+    font-size: 30px;
+  }
+}
 /**/
 #wpp {
   right: 10px;
