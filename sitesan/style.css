@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
 * {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
@@ -65,12 +66,12 @@ ul a {
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px;
+  border-radius: 10px;
   transition: background-color .2s ease-in-out;
 }
 
 ul a:hover {
   background-color: #0157a4ff;
-  border-radius: 10px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -90,7 +91,6 @@ ul a:hover {
   #menu-aparece{
     display: flex;
     position: absolute;
-    background-color: #F63231;
     justify-content: center;
     align-items: center;
     top: 90px;
@@ -99,6 +99,12 @@ ul a:hover {
     overflow: hidden;
     height: 0px;
     transition: 0.5s;
+
+    background: rgba(246, 0, 0, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
   }
   #menu-aparece>ul{
     display: flex;
@@ -134,6 +140,9 @@ section {
   z-index: 5;
   text-shadow: 2px 2px 1px black;
 }
+.frase>p{
+  font-family: 'Londrina Solid', cursive;
+}
 
 #botao1 {
   border-radius: 25px;
@@ -164,8 +173,16 @@ section {
   .sectiondois,.sectiontres,.sectionquatro{
     flex-direction: column;
   }
+  .sectiontres>.alvenaria{
+    order: 2;
+  }
+  .sectiontres>.AlvenariaImg,.sectionquatro>.EletricaImg{
+    padding-top: 10px;
+  }
 }
 .sectiondois>img{
+  display: block;
+  margin: auto;
   height: 50px;
 }
 
@@ -178,7 +195,7 @@ section {
 
 /*ALVENARIA*/
 .sectiontres {
-  background-color: #808080;
+  background-color: #0157a4ff;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -188,6 +205,7 @@ section {
   text-align: center;
   color: #ffffff;
   padding-top: 100px;
+  width: 550px;
   padding-bottom: 100px;
   color: white;
   font-size: clamp(1.75em,1em + 3vw,1.5em);
@@ -214,15 +232,16 @@ section {
 
 /*ELETRICA*/
 .sectionquatro {
-  background-color: #0157a4ff;
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .eletrica {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   padding-top: 100px;
+  width: 550px;
   padding-bottom: 100px;
   font-size: clamp(1.75em,1em + 3vw,1.5em);
   word-wrap: break-word;
@@ -251,6 +270,15 @@ section {
   }
   .alvenaria>h1{
     font-size: 30px;
+  }
+  .alvenaria,.eletrica{
+    width: auto;
+    font-size: 20px; 
+    margin: 0 50px;
+    padding: 25px 0;
+  }
+  #botao2,#botao3{
+    font-size: 20px;
   }
 }
 /**/
