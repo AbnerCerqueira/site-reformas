@@ -85,7 +85,7 @@ ul a:hover {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
   #navigation {
     display: none;
   }
@@ -143,8 +143,8 @@ section {
   color: white;
   font-size: 45px;
   position: absolute;
-  bottom: 100px;
-  left: 200px;
+  bottom: 80px;
+  left: 100px;
   z-index: 5;
   text-shadow: 3px 3px 1px black;
 }
@@ -181,7 +181,7 @@ section {
   justify-content: space-around;
 }
 
-@media (max-width:850px) {
+@media (max-width:1050px) {
 
   .sectiondois,
   .sectiontres,
@@ -197,12 +197,9 @@ section {
   .sectionquatro>.EletricaImg {
     padding-top: 10px;
   }
-}
-
-.sectiondois>img {
-  display: block;
-  margin: auto;
-  height: 50px;
+  .sectionum>.frase{
+    font-size: 30px;
+  }
 }
 
 .sectiondois>p {
@@ -341,7 +338,7 @@ section {
 }
 
 @media (max-width:600px) {
-  .EletricaImg {
+  .EletricaImg,.AlvenariaImg {
     height: 350px;
     width: 350px;
   }
@@ -364,6 +361,11 @@ section {
   #botao5,
   #botao6 {
     font-size: 20px;
+  }
+
+  .sectionum>.frase{
+    font-size: 1.5em;
+    left: 0px;
   }
 }
 
