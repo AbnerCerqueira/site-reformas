@@ -85,7 +85,7 @@ ul a:hover {
   display: none;
 }
 
-@media (max-width:800px) {
+@media (max-width:1050px) {
   #navigation {
     display: none;
   }
@@ -146,10 +146,10 @@ section {
   bottom: 80px;
   left: 100px;
   z-index: 5;
-  text-shadow: 3px 3px 1px black;
 }
 
 .frase>p {
+  text-shadow: 3px 3px 1px black;
   font-family: 'Poppins', sans-serif;
 }
 .frase a:hover {
@@ -173,6 +173,17 @@ section {
   border-radius: 20px;
   text-decoration: none;
 }
+.fundopreto{
+  position: absolute;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.655);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.proxima{
+  z-index: 6;
+}
 
 /*INFOS*/
 .sectiondois {
@@ -185,7 +196,8 @@ section {
 
   .sectiondois,
   .sectiontres,
-  .sectionquatro {
+  .sectionquatro,
+  footer{
     flex-direction: column;
   }
 
@@ -384,13 +396,13 @@ footer {
   justify-content: space-around;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
+  height: 40vh;
 }
 
 .footerfc p:nth-child(1) {
   font-size: 30px;
 }
-
 
 /*SPANS*/
 .F {
@@ -422,7 +434,7 @@ footer {
 }
 
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 7px;
   background-color: #0157a4ff;
 }
 
