@@ -152,9 +152,11 @@ section {
   text-shadow: 3px 3px 1px black;
   font-family: 'Poppins', sans-serif;
 }
+
 .frase a:hover {
   color: #ffffff;
 }
+
 #botao1 {
   color: #ffffff;
   border-radius: 25px;
@@ -173,7 +175,8 @@ section {
   border-radius: 20px;
   text-decoration: none;
 }
-.fundopreto{
+
+.fundopreto {
   position: absolute;
   z-index: 4;
   background-color: rgba(0, 0, 0, 0.655);
@@ -181,8 +184,40 @@ section {
   height: 100%;
   top: 0;
 }
-.proxima{
+
+.proxima {
   z-index: 6;
+}
+
+@media (max-width:800px) {
+  .caixa {
+    height: 500px;
+  }
+
+  .carousel-item>img {
+    height: 500px;
+  }
+}
+
+@media (max-width:450px) {
+  .caixa,.sectionum{
+    min-height: 300px;
+    height: 300px;
+  }
+
+  .carousel-item>img {
+    height: 300px;
+  }
+  .sectionum>.frase{
+    margin-left: 50px;
+    bottom: 30px;
+  }
+  .sectionum>.frase>p{
+    font-size: 16px;
+  }
+  .sectionum>.frase>a{
+    display: none;
+  }
 }
 
 /*INFOS*/
@@ -197,7 +232,7 @@ section {
   .sectiondois,
   .sectiontres,
   .sectionquatro,
-  footer{
+  footer {
     flex-direction: column;
   }
 
@@ -209,7 +244,8 @@ section {
   .sectionquatro>.EletricaImg {
     padding-top: 10px;
   }
-  .sectionum>.frase{
+
+  .sectionum>.frase {
     font-size: 30px;
   }
 }
@@ -350,9 +386,11 @@ section {
 }
 
 @media (max-width:600px) {
-  .EletricaImg,.AlvenariaImg {
-    height: 350px;
-    width: 350px;
+
+  .EletricaImg,
+  .AlvenariaImg {
+    width: 300px;
+    height: 200px;
   }
 
   .alvenaria>h1 {
@@ -366,6 +404,7 @@ section {
     margin: 0 50px;
     padding: 25px 0;
   }
+
   #botao1,
   #botao2,
   #botao3,
@@ -375,7 +414,7 @@ section {
     font-size: 20px;
   }
 
-  .sectionum>.frase{
+  .sectionum>.frase {
     font-size: 1.5em;
     left: 0px;
   }
